@@ -175,6 +175,9 @@ col1, col2 = st.columns([1, 1])
 
 with col1:
     st.subheader("1. 素材アップロード & 入力")
+    # --- ★ここに追加！スマホ向けの案内 ---
+    st.info("💡 **スマホの方へ：** 文字サイズ・影・黒帯の設定は、画面左上の **「>>」マーク** を押してメニューを開くと変更できます！")
+    # ----------------------------------
     bg_file = st.file_uploader("背景画像を選択", type=["png", "jpg", "jpeg", "bmp"])
     name_text = st.text_input("キャラクター名", value="キャラクター名")
     main_text = st.text_area("本文", value="ここに本文を入力してください", height=150)
@@ -226,3 +229,4 @@ with st.expander("🔒 セキュリティとプライバシーについて（詳
     st.markdown("### ソースコードの確認")
     st.markdown("プログラミングの知識がある方は、以下のリポジトリから処理内容を直接確認できます。")
     st.markdown("[👉 GitHubリポジトリ: arxigad91/UMA_TEXT](https://github.com/arxigad91/UMA_TEXT)")
+
