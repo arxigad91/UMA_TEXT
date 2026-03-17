@@ -147,6 +147,11 @@ def generate_image(image_file, font_file_obj, name_text, main_text,
 st.set_page_config(page_title="UMA TEXT GENERATOR Web", layout="wide")
 
 st.title("UMA TEXT GENERATOR Web Edition")
+
+# --- 移転の案内を追加 ---
+st.warning("⚠️ **【重要なお知らせ】サイト移転のご案内**\n\n当サービスは**3月末**をもって終了し、新しいサイトへ完全移転いたします。\nお手数ですが、ブックマークやリンクの変更をお願いいたします。\n\n👉 **新サイト：[https://studio-genesis-c-a.com](https://studio-genesis-c-a.com)**")
+# -----------------------
+
 st.markdown("画像をアップロードして、テキストを入力してください。")
 
 with st.sidebar:
